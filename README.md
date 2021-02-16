@@ -86,7 +86,7 @@ _send.execute(client=client)
 py-buycoins also features a generic mutation/query generator that allows you generate your own queries from scratch. In the event that the utility classes, we provide don't meet your requirements, or the BuyCoins API is updated and the current utility classes haven't been updated to reflect the change; the `Mutation` class allows you create custom mutations, as per your specification.
 
 ```python
-from gcore.mutations import Mutation
+from gcore import Mutation
 
 custom_mutation = Mutation(name="myMutation") # instantiate class with proposed name of mutation
 
@@ -102,7 +102,7 @@ client.execute(query=mutation_string)
 A similar thing can be done for queries as with mutations
 
 ```python
-from gcore.queries import Query
+from gcore import Query
 
 custom_query = Query(name="myQuery") # instantiate class with proposed name of query
 `
